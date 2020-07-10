@@ -1,0 +1,23 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+  
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #f9c6c9;
+}
+  
+.title {
+    color: #fbfefb;
+    background-color: #dbcdf0;
+    padding: 15px;
+    text-align: center;
+    border: solid #5D6063;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+  
+    width: 900px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}

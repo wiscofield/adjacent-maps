@@ -2,14 +2,16 @@
 <html lang='en'>
     <head>
         <meta charset='UTF-8'/>
-        <title>Map to Your Destination!</title>
+        <title>Fuzzbeed-Social-Styles</title>
         <link rel='stylesheet' href='style.css'/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div class='title'>
-            <h1>Map to Your Destination!</h1> <!--we could change the name-->
-            <p>Take this quiz to discover your <a href="http://changingminds.org/explanations/preferences/social_styles.htm">social style</a>!<br>This quiz is specifically for students at <a href = "https://adjacentacademies.com/">Adjacent Academies</a>!</p>
+          <h1>Choose your path -- What's your social style?</h1>
+          <p>If you're a student at <a href = "https://adjacentacademies.com/">Adjacent Academies</a>, then this is the quiz for you. Find out your social style now!</p>
         </div>
         
         <form  id="form1">
@@ -17,33 +19,34 @@
           <div class="question">
             <h3>In a team project, do you prefer to focus on:</h3>
             <ul class="options">
-              <li>
-                <label><input type="radio" name="q1" value="0" />the immediate timeframe</label>
+              <li class='option1'>
+                <label><input type="radio" name="q1" value="0" /> the immediate time frame</label>
               </li>
-              <li>
-                <label><input type="radio" name="q1" value="90" />focus on writing down the process first</label>
+              <li class='option2'>
+                <label><input type="radio" name="q1" value="90" /> focus on writing down the process first</label>
               </li>
-              <li>
-                <label><input type="radio" name="q1" value="180" />getting things done with and through others</label>
+              <li class='option3'>
+                <label><input type="radio" name="q1" value="180" /> getting things done with and through others</label>
               </li>
-              <li>
-                <label><input type="radio" name="q1"value="270" />making decisions quickly based on feelings</label>
+              <li class='option4'>
+                <label><input type="radio" name="q1"value="270" /> making decisions quickly based on feelings</label>
               </li>
             </ul>
           </div>
+
           <div class="question">
             <h3>When you built your first website on Monday, did you:</h3>
             <ul class="options">
-              <li>
+              <li class='option1'>
                 <label><input type="radio" name="q2" value="0" />immediately start coding to complete the project by the deadline</label>
               </li>
-              <li>
+              <li class='option2'>
                 <label><input type="radio" name="q2" value="90" />watch all the tutorial videos and focus on writing your code perfectly</label>
               </li>
-              <li>
+              <li class='option3'>
                 <label><input type="radio" name="q2" value="180" />get to know your partner first and create a plan based on them</label>
               </li>
-              <li>
+              <li class='option4'>
                 <label><input type="radio" name="q2"value="270" />quickly dream up a website idea and moved forward fearlessly</label>
               </li>
             </ul>
@@ -52,16 +55,16 @@
           <div class="question">
             <h3>When you are in a break-out session (Zoom), do you:</h3>
             <ul class="options">
-              <li>
+              <li class='option1'>
                 <label><input type="radio" name="q3" value="0" />introduce yourself immediately</label>
               </li>
-              <li>
+              <li class='option2'>
                 <label><input type="radio" name="q3" value="180" />wait for the other person to introduce themselves</label>
               </li>
-              <li>
+              <li class='option3'>
                 <label><input type="radio" name="q3" value="90" />get right to the given task</label>
               </li>
-              <li>
+              <li class='option4'>
                 <label><input type="radio" name="q3"value="270" />bring positive energy and knows how to break the ice</label>
               </li>
             </ul>
@@ -70,29 +73,68 @@
           <div class="question">
             <h3>When you are stuck on a syntax error, do you:</h3>
             <ul class="options">
-              <li>
+              <li class='option1'>
                 <label><input type="radio" name="q4" value="270" />reach out for help</label>
               </li>
-              <li>
+              <li class='option2'>
                 <label><input type="radio" name="q4" value="90" />mess around with the syntax</label>
               </li>
-              <li>
+              <li class='option3'>
                 <label><input type="radio" name="q4" value="180" />research possible solutions </label>
               </li>
-              <li>
+              <li class='option4'>
                 <label><input type="radio" name="q4"value="0" />all of the above</label>
               </li>
             </ul>
           </div>
-        </div>
-        <div id="submit-button">
-          <button type="submit" value="Submit">Submit</button>
-        </div>
 
+          <div class="question">
+            <h3>Which social-style do you think you align with the most:</h3>
+            <ul class="options">
+              <li class='option1'>
+                <label><input type="radio" name="q5" value="270" />expressive (social, visionary, and enthusiastic)</label>
+              </li>
+              <li class='option2'>
+                <label><input type="radio" name="q5" value="90" />analytical (logical, factual, and task-oriented)</label>
+              </li>
+              <li class='option3'>
+                <label><input type="radio" name="q5" value="180" />amiable (supportive, patient, and collaborative) </label>
+              </li>
+              <li class='option4'>
+                <label><input type="radio" name="q5"value="0" />driver (independent, decisive, direct)</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="question">
+            <h3>Which statement do relate with the most regarding your completion of the first week at Adjacent:</h3>
+            <ul class="options">
+              <li class='option1'>
+                <label><input type="radio" name="q6" value="180" />excited for the following weeks and happy to be working with everyone</label>
+              </li>
+              <li class='option2'>
+                <label><input type="radio" name="q6" value="90" />love the time and energy put into creating this well-thought out program</label>
+              </li>
+              <li class='option3'>
+                <label><input type="radio" name="q6" value="270" />feeling ecstatic and telling everyone how fun-stressful-a-whole-bunch-of-other-feelings-combined of an experience this has been </label>
+              </li>
+              <li class='option4'>
+                <label><input type="radio" name="q6"value="0" />fired up. ready to learn more. no sleep (jk). repeat. oh and eat.</label>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        
+          
 </form>
 
 <p id="answer"></p>
 <p id="answer2"></p>
+ <div id="submit-button">
+          <button type="submit" value="Submit">Submit</button>
+          <div id="submit-button"></div>
+          <button href="https://www.w3docs.com"></a></p> value="Submit">Submit</button>
 </div>
 
 <script>
