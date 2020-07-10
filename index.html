@@ -13,7 +13,7 @@
           <h1>Choose your path -- What's your social style?</h1>
           <p>If you're a student at <a href = "https://adjacentacademies.com/">Adjacent Academies</a>, then this is the quiz for you. Find out your social style now!</p>
         </div>
-        
+
         <form  id="form1">
         <div class='page'>
           <div class="question">
@@ -125,51 +125,51 @@
           </div>
 
         </div>
-        
-          
+
+       <div id="submit-button">
+        <input type= "button" onclick= "process()" value="Submit">
+        <div id="submit-button"></div>
+        </div>
 </form>
+
 
 <p id="answer"></p>
 <p id="answer2"></p>
- <div id="submit-button">
-          <button type="submit" value="Submit">Submit</button>
-          <div id="submit-button"></div>
-          <button href="https://www.w3docs.com"></a></p> value="Submit">Submit</button>
-</div>
 
 <script>
-	   document.getElementById("form1").onsubmit=function() {
-	   
-	   
-	   Q1 = parseInt(document.querySelector('input[name = "q1"]:checked').value);  
+  function process() {
+    let links = "buzzfeed.html";
+
+	  //document.getElementById("form1").onsubmit=function() {
+
+	   Q1 = parseInt(document.querySelector('input[name = "q1"]:checked').value);
      Q2 = parseInt(document.querySelector('input[name = "q2"]:checked').value);
 	   Q3 = parseInt(document.querySelector('input[name = "q3"]:checked').value);
      Q4 = parseInt(document.querySelector('input[name = "q4"]:checked').value);
-	   
-	   total= Q1 + Q2 + Q3 + Q4;
+     Q5 = parseInt(document.querySelector('input[name = "q5"]:checked').value);
+     Q6 = parseInt(document.querySelector('input[name = "q6"]:checked').value);
 
-     average = total / 4;
-	   
-	   document.getElementById("answer").innerHTML = average;	   
+	   total= Q1 + Q2 + Q3 + Q4 + Q5 + Q6;
+
+     average = total / 6;
+
+	   //document.getElementById("submit-button").innerHTML = ;
 
 	   if(average < 90) {
+       links=
        document.getElementById("answer2").innerHTML = "You are a driver.";
-       }
-       
-    if(average >=90 && total < 180) {
-      document.getElementById("answer2").innerHTML = "You are analytical.";
-      }
-      
-    if(average >=180 && total < 270) {
+       } else if(average >=90 && total < 180) {
+         links="buzzfeed.html";
+       } else if(average >=180 && total < 270)  {
+         onclick="buzzfeed.html"
       document.getElementById("answer2").innerHTML = "You are amiable.";
-      }
-      
-    if(average >=270) {
+       } else if(average >=270)  {
+         links="buzzfeed.html"
       document.getElementById("answer2").innerHTML = "You are expressive.";
-      }   
-	   
-	   return false; // required to not refresh the page; just leave this here
-	   }// end the submit function
+       }
+       window.location.href=links;
+
+    }
 </script>
 
     </body>
