@@ -2,7 +2,7 @@
     font-family: 'Montserrat', sans-serif;
 }
   
-html {
+html {    /*  This style should be assigned to the body tag instead of the overall html tag*/
     height: 100%;
     width: 100%;
     background-color: #f9c6c9;
