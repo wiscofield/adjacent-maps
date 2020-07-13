@@ -6,6 +6,7 @@
         <link rel='stylesheet' href='style.css'/>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <!----------*********  Try to be consisent in using " or '  **********-->
     </head>
 
     <body>
@@ -127,7 +128,7 @@
         </div>
 
        <div id="submit-button">
-        <input type= "button" onclick= "process()" value="Submit">
+        <input type= "button" onclick= "process()" value="Submit">  <!--***********************************  Make sure you use input type submit and tie the event listner to the onsubmit event instead of onlick-->
         <div id="submit-button"></div>
         </div>
 </form>
@@ -136,26 +137,26 @@
 <p id="answer"></p>
 <p id="answer2"></p>
 
-<script>
+<script>  //**********************  Having JS in your HTML file is ok for testing purposes or initializing added in libraries (Such as google maps) but be sure to eventually move it to it's own JS file
   function process() {
     let links = "https://about.gitlab.com/handbook/people-group/learning-and-development/emotional-intelligence/social-styles/";
 
 	  //document.getElementById("form1").onsubmit=function() {
-
+      //******************  Make sure you declare all variables the first time they are used with 'let' or 'const'
 	   Q1 = parseInt(document.querySelector('input[name = "q1"]:checked').value);
      Q2 = parseInt(document.querySelector('input[name = "q2"]:checked').value);
 	   Q3 = parseInt(document.querySelector('input[name = "q3"]:checked').value);
      Q4 = parseInt(document.querySelector('input[name = "q4"]:checked').value);
-     Q5 = parseInt(document.querySelector('input[name = "q5"]:checked').value);
+     Q5 = parseInt(document.querySelector('input[name = "q5"]:checked').value);///**************  Great use of query selector here (and on all of the other lines)!
      Q6 = parseInt(document.querySelector('input[name = "q6"]:checked').value);
 
-	   total= Q1 + Q2 + Q3 + Q4 + Q5 + Q6;
+	   total= Q1 + Q2 + Q3 + Q4 + Q5 + Q6;    //  **** Dont forget to declare your variables with 'let' or 'const'
 
-     average = total / 6;
+     average = total / 6;  //  **** Dont forget to declare your variables with 'let' or 'const'
 
 	   //document.getElementById("submit-button").innerHTML = ;
 
-	   if(average < 90) {
+	   if(average < 90) {  ////**************Great use of if and else if!
        links=
        document.getElementById("answer2").innerHTML = "You are a driver.";
        } else if(average >=90 && total < 180) {
